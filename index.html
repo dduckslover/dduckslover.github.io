@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <section id="index">
+            <div class="page-1">
+                <nav class="topnav">
+                    <img src="images/moon.png" id="icon">
+                </nav>
+                <div class="bio">
+                    <div class="logo">
+                        <img src="images/logo.png" class="logo">
+                    </div>
+                    <div class="name">
+                        <h1>DucksLover</h1>
+                    </div>
+                    <div class="basic-text">
+                        <h2>Spanish Guy</h2>
+                    </div>
+                    <div class="Skills">
+                        <p>Basic Python<br>Basic HTML<br>Has a ton of freetime<br>Pray Ducks</p>
+                    </div>
+                    <div class="projects">
+                        <h2>Projects</h2>
+                        <a href="#valorant"><button class="btn">Valorant Chat Bypass</button></a><br>
+                        <a href="#clothing-shop"><button class="btn">Clothing Shop</button></a>
+                    </div>
+                </div>
+            </div>
+        <section id="valorant">
+            <div class="page-2">
+                <div class="valorant">
+                    <h1>Valorant Chat Bypass</h1>
+                    <p>Its a basic script written in Python that bypasses the Valorant chat filter. It was written 1 year ago, and I think it still works</p>
+                    <img src="images/valorant.png" height="40%" class="valorant-img"><br>
+                    <a href="https://github.com/TrynaChill/Valorant-Chat-Bypass" target="_blank"><button class="btn">Github Link</button></a><br>
+                    <a href="#index"><button class="btn">Go back</button></a><br>
+                    <a href="#clothing-shop"><button class="btn">Next</button></a>
+                </div>
+            </div>
+        </section>
+        <section id="clothing-shop">
+            <div class="page-3">
+                <div class="clothing">
+                    <h1>Clothing Brand</h1>
+                    <p>Im actually in proccess of making a clothing brand with a friend. <br>It will probably get launched in mid november or december:D</p>
+                    <img src="images/clothing.png" class="img-clothing"><br><br>
+                    <a href="#index"><button class="btn">Index</button></a><br>
+                    <a href="#valorant"><button class="btn">Valorant</button></a><br>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+
+        var icon = document.getElementById("icon");
+        icon.onclick = function(){
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")){
+                icon.src = "images/sun.png";
+            }else{
+                icon.src ="images/moon.png"
+            }
+        }
+
+    </script>
+</body>
+</html>

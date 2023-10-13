@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(32, 32, 32);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    page-break-after: always;
+    overflow: hidden;
+    font-family:'Poppins', sans-serif;
+}
+.page-1{
+    width: 1920px;
+    height: 1080px;
+    padding: 20px;
+    padding-top: 4%;
+    background-image: var(--primary-background);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-size: 28px;
+}
+h2{
+    font-size: 20px;
+}
+p{
+    line-height: 25px;
+}
+.bio{
+    border: 2px solid var(--primary-color);
+    margin-left: 40%;
+    margin-right: 40%;
+    padding-top: 50px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 2px var(--primary-color);
+    backdrop-filter: var(--blur);
+    background-color: var(--transparent);
+}
+.page-2{
+    width: 1920px;
+    height: 1080px;
+    padding: 20px;
+    background-image: var(--secondary-background);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.valorant{
+    border: 2px solid var(--primary-color);
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 30px;
+    margin-top:35px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 2px var(--primary-color);
+    backdrop-filter: var(--blur);
+    background-color: var(--transparent);
+}
+.page-3{
+    width: 1920px;
+    height: 1080px;
+    padding: 20px;
+    background-image: var(--tertiary-background);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clothing{
+    border: 2px solid var(--primary-color);
+    margin-top: 130px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 30px 2px var(--primary-color);
+    backdrop-filter: var(--blur);
+    background-color: var(--transparent);
+}
+.img-clothing{
+    height: 360px;
+    width: 600px;
+}
+.basic-text{
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+.logo{
+    height: 200px;
+    border-radius: 50%;
+}
+.btn{
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 30px 2px var(--primary-color);
+    color: var(--primary-color);
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family:'Poppins', sans-serif;
+}
+
+.btn:hover{
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 30px 2px var(--secondary-color);
+    color: var(--secondary-color);
+}
+.topnav{
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+    margin-top: -60px;
+    margin-right: 1%;
+}
+#icon{
+    cursor: pointer;
+}
+:root{
+    --primary-background: url(images/background.png);
+    --secondary-background: url(images/background-2.png);
+    --tertiary-background: url(images/background-3.png);
+    --primary-color: white;
+    --secondary-color: lightpink;
+    --blur: blur(10px);
+    --transparent: transparent;
+}
+
+.dark-theme{
+    --primary-background: url(images/background-night.jpg);
+    --secondary-background: url(images/background-2-night.png);
+    --tertiary-background: url(images/background-3-night.png);
+    --primary-color: #907ccc;
+    --secondary-color: darkgreen;
+    --blur: none;
+    --transparent: rgb(31, 31, 31);
+}
